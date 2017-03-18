@@ -28,6 +28,11 @@ class DB
 					$sth->execute($params);
 
 			}
+
+		public function lastInsertId()
+			{
+				 return $this->dbh->lastInsertId();
+			}
 }
 
  ?>
